@@ -1,12 +1,12 @@
 'use client';
 import { useRouter } from 'next/navigation';
 
-function Sidebar({ className }:{className:string}) {
+function Sidebar() {
     const router = useRouter();
 
     return (
-        <aside className={`${className} bg-gray-800 text-white w-full md:w-1/4 p-6 rounded-lg shadow-lg`}>
-            <div className="space-y-6">
+        <aside className="w-full bg-gray-800 text-white p-6 rounded-lg">
+            <div className="space-y-8">
                 {/* Home Page Link */}
                 <div className="flex items-center space-x-3">
                     <span className="text-xl font-semibold">🏠</span>

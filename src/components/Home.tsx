@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 
-function Main({ className }: { className: string }) {
+function Home({ className }: { className: string }) {
   const [showForm, setShowForm] = useState(false);
   const [foodAdding, setFoodAdding] = useState('');
   const [foodQuantity, setFoodQuantity] = useState('');
@@ -147,4 +147,4 @@ function Main({ className }: { className: string }) {
   );
 }
 
-export default Main;
+export default Home;
