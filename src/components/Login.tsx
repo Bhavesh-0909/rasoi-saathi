@@ -48,7 +48,7 @@ export default function Login({ email, password, setEmail, setPassword, handleLo
 
         {/* Redirect to Sign Up */}
         <p className="mt-4 text-white">
-          Don't have an account?{" "}
+          Dont have an account?{" "}
           <Link href="/Signup" passHref>
             <span className="text-blue-500 hover:underline cursor-pointer">Sign Up</span>
           </Link>
