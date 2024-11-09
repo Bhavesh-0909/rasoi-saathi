@@ -12,8 +12,8 @@ const Navbar = ({ className }: NavbarProps) => {
         <nav className={`${className} min-w-screen py-4 px-6 bg-blue-600 text-white shadow-md flex justify-between items-center`}>
             {/* Logo Section */}
             <div className="flex items-center space-x-2">
-                <Image height={32} width={32} src="/path/to/logo.png" alt="Food Saver Logo" className="h-8 w-8" />
-                <h1 className="text-xl font-bold">Food Saver</h1>
+                <Image height={32} width={32} src="/rasoi.png" alt="Food Saver Logo" className="h-8 w-8" />
+                <h1 className="text-xl font-bold">RASOI SAATHI</h1>
             </div>
 
             {/* Account Section */}
