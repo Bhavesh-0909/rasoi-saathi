@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const Navbar = () => {
     return (
-        <nav className={`min-w-screen h-full py-4 px-6 bg-blue-600 text-white shadow-md flex justify-between items-center`}>
+        <nav className={`min-w-screen h-full py-4 px-6 bg-gray-800 border-b text-white shadow-md flex justify-between items-center`}>
             {/* Logo Section */}
             <div className="flex items-center space-x-2">
                 <Image height={32} width={32} src="/rasoi.png" alt="Food Saver Logo" className="h-8 w-8" />
