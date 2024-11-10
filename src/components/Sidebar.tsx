@@ -10,15 +10,9 @@ function Sidebar() {
                 {/* Home Page Link */}
                 <div className="flex items-center space-x-3">
                     <span className="text-xl font-semibold">🏠</span>
-                    <a onClick={() => router.push('/')} className="text-lg font-medium hover:text-blue-400 cursor-pointer">Home Page</a>
+                    <a onClick={() => router.push('/')} className="text-lg font-medium hover:text-blue-400 cursor-pointer">Analytics</a>
                 </div>
-                
-                {/* Analytics Link */}
-                <div className="flex items-center space-x-3">
-                    <span className="text-xl font-semibold">📊</span>
-                    <a onClick={() => router.push('/analytics')} className="text-lg font-medium hover:text-blue-400 cursor-pointer">Analytics</a>
-                </div>
-                
+                                
                 {/* Donation Section */}
                 <div className="flex items-center space-x-3">
                     <span className="text-xl font-semibold">💰</span>

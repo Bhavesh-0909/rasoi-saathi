@@ -38,7 +38,7 @@ const Navbar = () => {
                     >
                         <Menu.Items className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                             <div className="py-1">
-                                {['Profile', 'Settings', 'Logout'].map((item) => (
+                                {['Profile', 'Settings'].map((item) => (
                                     <Menu.Item key={item}>
                                         {({ active }) => (
                                             <a
@@ -53,6 +53,21 @@ const Navbar = () => {
                                     </Menu.Item>
                                 ))}
                             </div>
+                        <Menu.Item>
+                            {({ active }) => (
+                                <button
+                                    onClick={() => {
+                                        document.cookie = 'authToken=; Max-Age=0';
+                                        alert('Logged out successfully');
+                                    }}
+                                    className={`${
+                                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'
+                                    } flex justify-between w-full px-4 py-2 text-sm leading-5`}
+                                >
+                                    Logout
+                                </button>
+                            )}
+                        </Menu.Item>
                         </Menu.Items>
                     </Transition>
                 </Menu>

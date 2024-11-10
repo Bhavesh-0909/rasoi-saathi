@@ -71,7 +71,7 @@ function RecipeSuggestions() {
   };
 
   return (
-    <div className="w-full mx-auto p-4">
+    <div className="w-full h-auto mx-auto min-h-screen bg-gray-800 p-4 pb-10">
       {/* Heading and Icon */}
       <div className="text-center mb-5">
         <h1 className="text-2xl font-bold flex items-center justify-center">
@@ -82,7 +82,7 @@ function RecipeSuggestions() {
 
       {/* Chat Box */}
       {messages && <div
-        className=" w-full h-full overflow-y-auto p-4 border border-gray-300 rounded-lg"
+        className=" w-full overflow-y-auto p-4 border border-gray-300 rounded-lg"
         ref={chatContainerRef}
       >
         {messages.map((message, index) => (
@@ -100,7 +100,7 @@ function RecipeSuggestions() {
       </div>}
 
       {/* Input Field and Send Button */}
-      <div className="mt-5 grid grid-cols-8 gap-2 h-full">
+      <div className="mt-5 grid grid-cols-8 gap-2 h-10">
         <input
           type="text"
           value={ingredients}

@@ -3,7 +3,18 @@ import React, { useState, useEffect } from 'react';
 
 function Page() {
     const [loading, setLoading] = useState(true);
-    const [donations, setDonations] = useState([]);
+    interface Donation {
+        _id: string;
+        foodType: string;
+        noOfPeopleFed: number;
+        amountOfFood: string;
+        donatedBy: string;
+        receivedBy: string;
+        donatedAt: string;
+        status: string;
+    }
+
+    const [donations, setDonations] = useState<Donation[]>([]);
 
     useEffect(() => {
         // Simulate a network request
@@ -39,7 +50,7 @@ function Page() {
     return (
         <div className='w-full h-full flex flex-col items-center justify-evenly p-4 bg-gray-800'>
             <h1 className='text-2xl font-bold mb-4'>Donation History</h1>
-            <div className='w-full max-w-md'>
+            {donations && <div className='w-full max-w-md'>
                 {donations.map(donation => (
                     <div key={donation._id} className="card bg-gray-900 shadow-md rounded-lg p-4 mb-4">
                         <p className='text-white font-semibold'>Food Type: <span className='text-gray-400'>{donation.foodType}</span></p>
@@ -51,7 +62,7 @@ function Page() {
                         <p className='text-white font-semibold'>Status: <span className='text-gray-400'>{donation.status}</span></p>
                     </div>
                 ))}
-            </div>
+            </div>}
         </div>
     );
 }
